@@ -58,7 +58,7 @@ const Home = () => {
 		setIsPlaying(true);
 	};
 
-	const prev = () => {
+	const prev = () => {   
 		0 === getSongIndex()
 			? setCurrentSong(songs.sound[songs.sound.length - 1])
 			: setCurrentSong(songs.sound[getSongIndex() - 1]);
